@@ -8,3 +8,8 @@ function menuShow() {
         document.querySelector('.icon').src = "iconx20.png";
     }
 }
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
