@@ -6,6 +6,11 @@
     text-decoration: 0;
 }
 
+::selection {
+  background: #EA1D2C;
+  color: white;
+}
+
 body {
     background-color: #F7F7F7;
     overflow-x: hidden;
@@ -75,7 +80,7 @@ body {
 }
 
 .login-button button {
-    padding: 8px 28px;
+    padding: 8px 20px;
     font: 600 14px 'Poppins';
     border: none;
     background-color: #EA1D2C;
@@ -151,6 +156,7 @@ body {
   }
 
 @media screen and (max-width: 767px) { 
+
   header {
     position: fixed;
     width: 100%;
@@ -450,7 +456,7 @@ body {
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.274);
     }
 
-    figure:hover {
+    .cards-pequenos figure:hover {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.151);
     }
 
@@ -472,17 +478,17 @@ body {
       background-color: #8c60c5;
     }
 
-   .bestrest {
+   .bestrest, .bestmer {
     padding: 28px 25px;
    }
 
-   .bestrest h2{
+   .bestrest h2, .bestmer h2, .hunger h2, .cities h3 {
     border-top: 2px solid #f2f2f2;
     padding: 20px 0px;
     font: 500 1.25rem 'Poppins';
    }
 
-  .cards-bestrest h3 {
+  .cards-bestrest h3, .cards-bestmer h3 {
     font: 400 .800rem "Poppins";
     line-height: 1.125rem;
     color: black;
@@ -494,8 +500,9 @@ body {
     color: #717171;
   }
 
-  .cards-bestrest {
+  .cards-bestrest, .cards-bestmer {
     display: flex;
+    
   }
 
   .card-maior {
@@ -533,10 +540,160 @@ body {
     margin-left: 17px;
   }
 
+  .bestmer .card-text {
+    padding: 20px 16px;
+    margin: 0px;
+  }
+
   .img-cardbest {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     display: inline-block;
   }
+
+  .slide-img img {
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 12px;
+  }
+
+  .slide-only-img {
+    display: flex;
+  }
+
+  .slide-img {
+    display: flex;
+  }
+
+  .avisos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+  }
+
+  .avisos1{
+    background-image: url(https://www.ifood.com.br/static/images/landing-v2/link-background.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 6em 0px 0em 0;
+  }
+
+  .avisos2 {
+    background-image: url(https://www.ifood.com.br/static/images/landing-v2/link-background.svg);
+    background-repeat: no-repeat;
+    background-position: -2px 1.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 7em 0px 0em 0;
+  }
+
+  .avisos img {
+    width: 147px;
+    height: 100%;
+    
+  }
+
+  .avisos-text {
+    text-align: left;
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+
+  .avisos-text h3 {
+   font: 600 1.1em 'Poppins';
+  }
+
+  .avisos-text p {
+    font: 200 12px 'Poppins';
+    margin: 14px 24px 14px 0;
+    color: #717171;
+  }
+
+  .avisos button {
+    border: none;
+    font: 500 12px 'Poppins';
+    background-color: #EA1D2C;
+    width: 60%;
+    height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hunger, .img-beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hunger img {
+    width: 442px;
+    
+  }
+
+  .img-beneficios img {
+    width: 100%;
+  }
+
+  .caras-fofas {
+    padding: 28px 25px;
+    
+  }
+
+  .hunger p {
+    font: 400 14px 'Poppins';
+    text-align: center;
+    color: #717171;
+    max-width: 280px;
+    margin: 1.7em 0 12px 0;
+  }
+
+  .hunger button {
+    border: none;
+    font: 500 12px 'Poppins';
+    background-color: #EA1D2C;
+    padding: 8px 16px;
+    height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  footer {
+    padding: 0 20px 0 20px;
+  }
+
+  .cities {
+    padding: 4em 20px;
+    
+  }
+
+  .cities1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .cities1 p {
+    font: 400 15px 'Poppins';
+    color: #EA1D2C;
+  }
+
+  .cities p {
+    font: 400 14px 'Poppins';
+    color: #717171;
+  }
+  
 }
