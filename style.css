@@ -676,7 +676,7 @@ body {
   }
 
   .cities {
-    padding: 4em 20px;
+    padding: 4em 20px 20px 20px;
     
   }
 
@@ -686,14 +686,90 @@ body {
     align-items: baseline;
   }
 
+  .text-cities li, .text-cities a, .ifood-find li, .list-copyright-div li, .cities p, .ifood-find p {
+    list-style: none;
+    color: #717171;
+    font: 400 14px 'Poppins';
+    margin-bottom: 24px;
+  }
+  
+
   .cities1 p {
     font: 400 15px 'Poppins';
     color: #EA1D2C;
   }
 
-  .cities p {
-    font: 400 14px 'Poppins';
-    color: #717171;
+  .ifood-find h3, .social-div h3 {
+    font: 600 16px 'Poppins';
+    margin-bottom: 30px;
+  }
+
+  .ifood-find, .copyright-div {
+    padding: 40px 0 10px 0 ;
+    border-top: 1px solid #dcdcdc;
+  }
+
+  .ifood-div, .find-div {
+    margin-bottom: 20px;
+  }
+
+  .social-div {
+    margin-bottom: 30px;
   }
   
+  .social-div ul {
+    list-style-type: none;
+  }
+
+  .social-div svg {
+    fill: #717171;
+    width: 30px;
+    height: 30px;
+    transition: all .15s cubic-bezier(.25,.46,.45,.94);
+  }
+
+  .social-div svg:hover {
+    fill: #3e3e3e;
+  }
+
+  .icons ul {
+    display: flex;
+  }
+
+  .icons ul li {
+    margin-right: 20px;
+  }
+
+  .happy-face {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .happy-face p{
+    font: 300 11px 'Poppins';
+    color: #717171;
+  }
+  .copyright-div svg {
+    fill: #EA1D2C;
+    width: 50px;
+    height: 50px;
+  }
+
+  .list-copyright-div ul {
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .text-cities ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .ifood-find {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
