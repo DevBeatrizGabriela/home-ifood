@@ -1,13 +1,18 @@
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "icons/icons8-menu-arredondado-20.png";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "iconx20.png";
+const menu = document.querySelector('.menu');
+const NavMenu = document.querySelector('.mobile-menu-icon');
+const mobileMenu = document.querySelector('.mobile-menu')
+
+NavMenu.addEventListener('click', () => {
+    if (mobileMenu.style.display != 'none') {
+    mobileMenu.style.display = 'none'; 
+    menu.classList.toggle('ativo')
+
+} else {
+        mobileMenu.style.display = 'block';
+        mobileMenu.classList.toggle(".ativo")
+    
     }
-}
+})
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
